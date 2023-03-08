@@ -1,3 +1,3 @@
 
 
-Tech Buddy Version -1
+Tech Buddy Day-1
