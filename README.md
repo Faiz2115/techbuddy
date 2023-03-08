@@ -1,3 +1,3 @@
 
 
-Tech Buddy Day-1
+DAY - 1 DONE
