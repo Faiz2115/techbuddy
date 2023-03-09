@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom'
 import Marquee from "react-fast-marquee";
 import BlogCard from '../components/BlogCard';
 import ProductCard from '../components/ProductCard';
+import SpecialProduct from '../components/SpecialProduct';
 const Home = () => {
+  document.title = "Tech Buddy"
   return (
     <>
       <section className="home-wrapper-1 py-5">
@@ -209,7 +211,80 @@ const Home = () => {
           </div>
         </div>
       </section>
-      
+
+      <section className="famous-wrapper py-2 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row justify-content-between">
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src="images/watch.jpg" alt="famous" />
+                <div className="famous-content position-absolute">
+                  <h5>Big Screen</h5>
+                  <h6>Smart Watch Series 7</h6>
+                  <p>From $390/mo for 24 months</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src="images/watch.jpg" alt="famous" />
+                <div className="famous-content position-absolute">
+                  <h5>Big Screen</h5>
+                  <h6>Smart Watch Series 7</h6>
+                  <p>From $390/mo for 24 months</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src="images/watch.jpg" alt="famous" />
+                <div className="famous-content position-absolute">
+                  <h5>Big Screen</h5>
+                  <h6>Smart Watch Series 7</h6>
+                  <p>From $390/mo for 24 months</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section className="special-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">
+                Special Products
+              </h3>
+            </div>
+          </div>
+          <div className="row">
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+          </div>
+        </div>
+      </section>
+
+      <section className="popular-wrapper home-wrapper-2 py-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-12">
+              <h3 className="section-heading">
+                Our Popular Products
+              </h3>
+            </div>
+          </div>
+          <div className="row gap-3">
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+      </section>
+
+
       <section className="marque-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
@@ -246,7 +321,7 @@ const Home = () => {
 
       </section>
 
-     
+
 
       <section className="blog-wrapper home-wrapper-2 py-5">
         <div className="container-xxl">
