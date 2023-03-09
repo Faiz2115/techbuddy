@@ -12,8 +12,8 @@ const ProductCard = () => {
                     </Link>
                 </div>
                 <div className="product-image d-flex align-items-center justify-content-center">
-                    <img src="images/watch.jpg" alt="product-image" className='img-fluid'/>
-                    <img src="images/speaker.jpg" alt="product-image" className='img-fluid'/>
+                    <img src="images/watch.jpg" alt="product" className='img-fluid'/>
+                    <img src="images/speaker.jpg" alt="product" className='img-fluid'/>
                 </div>
                 <div className="product-details">
                     <h6 className="brand">
