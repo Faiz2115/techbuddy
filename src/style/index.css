@@ -253,8 +253,8 @@ a {
   right: 15px;
 }
 .product-card .product-image {
-  height: 270px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
 }
 .product-card .product-image img {
   -o-object-fit: contain;
@@ -281,6 +281,10 @@ a {
   font-size: 0.9rem;
   color: var(--color-131921);
 }
+.product-card .product-details .description {
+  font-size: 0.7rem;
+  color: var(--color-3b4149);
+}
 .product-card .product-details .price {
   font-size: 1rem;
   color: var(--color-3b4149);
@@ -289,6 +293,28 @@ a {
   top: 10%;
   right: -20px;
   transition: 0.3s;
+}
+
+.gr-12 {
+  width: 100%;
+  text-align: center;
+}
+.gr-12 .description {
+  width: 50%;
+  margin: auto;
+}
+
+.gr-6 {
+  width: 48%;
+  text-align: center;
+}
+
+.gr-4 {
+  width: 32%;
+}
+
+.gr-3 {
+  width: 24%;
 }
 
 .special-product-card {
@@ -381,7 +407,7 @@ footer:not(:first-child) {
 .filter-card {
   background-color: white;
   border-radius: 0.6rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem 1.5rem;
 }
 .filter-card .filter-title {
   font-size: 1rem;
@@ -402,6 +428,7 @@ footer:not(:first-child) {
   font-weight: 600;
   color: var(--color-3b4149);
   margin-bottom: 0.7rem;
+  margin-top: 1rem;
 }
 .filter-card div .form-check .form-check-label {
   font-size: 0.7rem;
@@ -416,4 +443,37 @@ footer:not(:first-child) {
 .filter-card div .form-check .form-check-input:focus {
   box-shadow: none;
   border-color: rgba(0, 0, 0, 0.25);
+}
+.filter-card .colors {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.filter-card .colors li {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+}
+.filter-card .random-products:first-child {
+  border-bottom: 1px solid var(--color-777777);
+}
+.filter-card .random-products h5 {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.store-wrapper .filter-sort-grid {
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.store-wrapper .grid img {
+  width: 2rem;
+  height: 2rem;
+  background-color: whitesmoke;
+  padding: 0.5rem;
+  border-radius: 3px;
 }/*# sourceMappingURL=index.css.map */

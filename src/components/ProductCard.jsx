@@ -1,10 +1,16 @@
 import React from 'react'
 import ReactStars from "react-rating-stars-component";
-import { Link } from 'react-router-dom';
-const ProductCard = () => {
+import { Link, useLocation } from 'react-router-dom';
+const ProductCard = (props) => {
+
+    const location = useLocation()
+    
 
     return (
-        <div className='col-3'>
+        <>
+            
+        
+        <div className={`${location.pathname === "/store" ? `gr-${props.grid}` : "col-3"}`}>
             <Link className="product-card position-relative">
                 <div className="wishlist-icon position-absolute">
                     <Link>
@@ -12,8 +18,8 @@ const ProductCard = () => {
                     </Link>
                 </div>
                 <div className="product-image d-flex align-items-center justify-content-center">
-                    <img src="images/watch.jpg" alt="product" className='img-fluid'/>
-                    <img src="images/speaker.jpg" alt="product" className='img-fluid'/>
+                    <img src="images/watch.jpg" alt="product"/>
+                    <img src="images/speaker.jpg" alt="product" />
                 </div>
                 <div className="product-details">
                     <h6 className="brand">
@@ -33,6 +39,9 @@ const ProductCard = () => {
                         fullIcon={<i className="fa fa-star"></i>}
                         activeColor="#ffd700"
                     />
+                    <p className={` description ${props.grid === 12 ? "d-block" : "d-none"}`}>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nisi soluta aperiam amet nesciunt quisquam, consectetur reprehenderit voluptatibus quam recusandae officia sapiente error! Amet cum eum excepturi aliquam accusamus deserunt!
+                    </p>
                     <p className="price">
                         $9,999/-
                     </p>
@@ -54,6 +63,9 @@ const ProductCard = () => {
                 </div>
             </Link>
         </div>
+
+      
+        </>
     )
 }
 
