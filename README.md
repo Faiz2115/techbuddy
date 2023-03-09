@@ -1,3 +1,3 @@
 
 
-DAY - 1 DONE
+Day 1 DONE
