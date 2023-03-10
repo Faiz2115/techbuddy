@@ -605,4 +605,58 @@ footer:not(:first-child) {
   font-weight: 400;
   color: var(--color-3b4149);
   margin: 0 0.5rem;
+}
+
+.policy-wrapper .policy {
+  background-color: white;
+  padding: 1.5rem;
+}
+
+.description-wrapper h4 {
+  font-size: 0.1 0.5rem;
+  color: var(--color-131921);
+}
+.description-wrapper div {
+  border-radius: 0.5rem;
+}
+.description-wrapper div p {
+  font-size: 0.8rem;
+  color: var(--color-777777);
+}
+
+.reviews-wrapper .review-inner-wrapper {
+  background-color: white;
+  padding: 1.5rem;
+}
+.reviews-wrapper .review-inner-wrapper .review-head {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  padding-bottom: 1rem;
+}
+.reviews-wrapper .review-inner-wrapper .review-head h4 {
+  font-size: 1.1rem;
+  color: var(--color-131921);
+}
+.reviews-wrapper .review-inner-wrapper .review-head p {
+  font-size: 0.7rem;
+  color: var(--color-777777);
+}
+.reviews-wrapper .review-inner-wrapper .review-form {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 0.7rem;
+}
+.reviews-wrapper .review-inner-wrapper .review-form h4 {
+  padding: 0.8rem 0;
+  font-size: 0.8rem;
+  color: var(--color-777777);
+}
+.reviews-wrapper .review-inner-wrapper .reviews {
+  padding: 0.7rem;
+}
+.reviews-wrapper .review-inner-wrapper .reviews .review:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.reviews-wrapper .review-inner-wrapper .reviews .review p {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  color: var(--color-777777);
 }/*# sourceMappingURL=index.css.map */
